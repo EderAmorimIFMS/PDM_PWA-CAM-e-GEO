@@ -1,0 +1,172 @@
+body {
+   background-color: #333;
+}
+
+/********* PAGINA DE LISTAGEM *********/ 
+.listagens-de-focos-comunidade {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.card_item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 95%;
+   height: 250px;
+   color: white;
+   background-color: #222;
+   border-radius: 15px;
+}
+
+.card_titulo {
+   font-size: 21px;
+   font-weight: 700;
+   color: white;
+}
+
+.card_descricao {
+   font-size: 17px;
+   font-weight: 500;
+   text-align: center;
+   color: white;
+}
+
+.card_imagem {
+  width: 100px;
+  height: 100px;
+}
+
+/********* FIM LISTAGEM *********/ 
+
+/********* PAGINA DE CADASTRAR *********/ 
+.cadastro-de-focos-comunidade {
+    max-width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.label {
+    font-size: 17px;
+    font-weight: 500
+    margin-bottom: 0;
+}
+
+.button-submit {
+  background: #1c9fff;
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+  border: 1px solid #333;
+  font-weight: 500;
+}
+
+.tirar-foto, .capturar {
+    background: #a7a9aa;
+    border-radius: 5px;
+    width: 90%;
+    height: 30px;
+    border: 1px solid #333;
+    font-weight: 500;
+  }
+
+input{
+    background: #a7a9aa;
+    border-radius: 5px;
+    width: 84%;
+    border: 1px solid #333;
+    font-weight: 500;
+    padding: 10px;
+  }
+
+.descricao, .titulodesc {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 0;
+}
+.textarea {
+    background: #a7a9aa;
+    border-radius: 5px;
+    width: 84%;
+    height: 100px;
+    border: 1px solid #333;
+    font-weight: 500;
+    padding: 10px;
+}
+
+  .mapa {
+    width: 90%;
+    height: 300px;
+  }
+  /********* FIM CADASTRAR *********/
+
+  /********* CAMERA ************/
+  #camera, #camera--view, #camera--sensor, #camera--output {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output {
+   transform: scaleX(-1);
+   filter: FlipH;
+}
+
+#camera--trigger {
+   width: 200px;
+   background-color: black;
+   color: white;
+   font-size: 16px;
+   border-radius: 30px;
+   border: none;
+   padding: 15px 20px;
+   text-align: center;
+   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+   position: fixed;
+   bottom: 30px;
+   left: calc(50% - 100px);
+}
+
+#camera--switcher {
+   width: 200px;
+   background-color: black;
+   color: white;
+   font-size: 16px;
+   border-radius: 30px;
+   border: none;
+   padding: 15px 20px;
+   text-align: center;
+   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+   position: fixed;
+   bottom: 85px;
+   left: calc(50% - 100px);
+}
+
+.taken{
+   width: 100px!important;
+   height: 100px!important; border: solid 3px white;
+   transition: all 0.5s ease-in;
+   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+   top: 20px;
+   right: 20px;
+   z-index: 2;
+}

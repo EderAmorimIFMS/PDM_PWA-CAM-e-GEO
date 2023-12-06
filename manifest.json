@@ -1,0 +1,22 @@
+{
+    "name": "Geolocation Progessive Web App",
+    "short_name": "cap-geolocation",
+    "icons": [
+        {
+            "src": "./images/imagem.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./images/imagem.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "pt-BR",
+    "start_url": "/cadastrar.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white"
+}
